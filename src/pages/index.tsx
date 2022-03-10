@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 
 import About from '../components/About';
@@ -44,7 +45,6 @@ const App = () => {
       <LazyShow>
         <>
           <Canvas />
-          <About />
         </>
       </LazyShow>
       <Analytics />

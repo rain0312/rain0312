@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Fragment } from 'react';
 
 import { Popover, Transition } from '@headlessui/react';
@@ -112,12 +113,14 @@ const Menu = () => {
                   </Link>
                 ))}
               </div>
-              <a
+              { 
+              callToAction &&  <a
                 href={callToAction.href}
                 className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
               >
                 {callToAction.text}
               </a>
+              }
             </div>
           </Popover.Panel>
         </Transition>
